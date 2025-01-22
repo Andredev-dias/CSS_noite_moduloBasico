@@ -46,7 +46,7 @@ nav{
     width: 0%;
     height: 3px;
     background-color: #b16e01;
-    transition: all 500ms linear;
+    transition: all 500ms ease-in-out;
 }
 .nav-right a:hover::before{
     width: 100%;
