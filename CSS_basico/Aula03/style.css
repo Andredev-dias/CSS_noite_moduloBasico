@@ -8,7 +8,7 @@ body{
     background-color: #011420;
     color: #ffffff;
 }
-nav{
+navbar{
     display: flex;
     align-items: center;
     justify-content: center;
