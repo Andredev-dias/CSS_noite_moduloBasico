@@ -262,23 +262,24 @@ span{
     align-items: center;
     justify-content: center;
     gap: 2vw;
-    transition: all 200ms ease-in-out;
+    transition: all 1s ease-in-out;
     z-index: 999;
+    border: 2px solid transparent;
 }
 
 .media-section:hover{
-    box-shadow: rgba(255, 255, 255, 0.478) 0px 5px 15px;
+  border: 2px solid #ffffff;
 }
 
 .md{
     display: flex;
     gap: 1.2vw; 
-    transition: all 500ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .md img{
     filter: grayscale(1);
-
+    transition: all 200ms ease-in-out;
 }
 
 .md img:hover{
@@ -310,4 +311,30 @@ span{
     background-color: rgba(0, 0, 0, 0.178);
     box-shadow: rgba(255, 255, 255, 0.044) 0px 10px 36px 0px, rgba(255, 255, 255, 0.019) 0px 0px 0px 1px;
  
+}
+
+
+@media (width < 600px){
+    navbar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 2vh;
+        background-color: #ffffffdc;
+    }
+    .nav-left {
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+    .nav-right {
+        width: 100%;
+        margin-bottom: 1vh;
+    }
+    .nav-right a {
+        color: #090909;
+        font-size: 16px;
+    }
+    
 }
