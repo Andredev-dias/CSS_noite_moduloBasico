@@ -219,7 +219,65 @@ span{
 }
 
 #s3{
-    height: auto;
+    height: 40vh;
     padding: 10vw;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.msgs{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.msgs h3{
+    font-size: 2.8rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: rgb(255, 255, 255) 0px 5px 15px;
+}
+
+.msgs p{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.media-section{
+    background-color: #ffffff41;
+    border-radius: 20px;
+    height: 90px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    transition: all 200ms ease-in-out;
+}
+
+.media-section:hover{
+    box-shadow: rgba(255, 255, 255, 0.478) 0px 5px 15px;
+}
+
+.md{
+    display: flex;
+    gap: 1.2vw; 
+    transition: all 500ms ease-in-out;
+}
+
+.md img{
+    filter: grayscale(1);
+
+}
+
+.md img:hover{
+    transform: translateY(-3px) scale(1.5) rotate(10deg);
+    filter: grayscale(0);
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.478) 0px 5px 15px;
 }
