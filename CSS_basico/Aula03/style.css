@@ -8,6 +8,7 @@
 body {
     background-color: #090909;
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 navbar {
@@ -227,6 +228,8 @@ span{
     gap: 8vh;
     align-items: center;
     justify-content: center;
+    position: relative;
+
 }
 
 .msgs{
@@ -241,11 +244,13 @@ span{
     text-transform: uppercase;
     letter-spacing: 5px;
     text-shadow: rgb(255, 255, 255) 0px 5px 15px;
+    z-index: 999;
 }
 
 .msgs p{
     font-size: 20px;
     line-height: 26px;
+    z-index: 999;
 }
 
 .media-section{
@@ -258,6 +263,7 @@ span{
     justify-content: center;
     gap: 2vw;
     transition: all 200ms ease-in-out;
+    z-index: 999;
 }
 
 .media-section:hover{
@@ -280,4 +286,28 @@ span{
     filter: grayscale(0);
     z-index: 999;
     box-shadow: rgba(0, 0, 0, 0.478) 0px 5px 15px;
+}
+
+.ball2 {
+    position: absolute;
+    bottom: -10%;
+    right: -20%;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.123) 0px 0px 0px 1px;
+  
+}
+
+.ball3 {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.178);
+    box-shadow: rgba(255, 255, 255, 0.044) 0px 10px 36px 0px, rgba(255, 255, 255, 0.019) 0px 0px 0px 1px;
+ 
 }
