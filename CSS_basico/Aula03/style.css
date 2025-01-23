@@ -22,6 +22,7 @@ navbar{
 }
 .nav-left{
     width: 10%;
+    padding-left: 4.2vw;
 }
 .nav-right{
     width: 90%;
@@ -37,7 +38,7 @@ navbar{
     position: relative;
 }
 .nav-right a:hover{
-    color:#b16e01;
+    color:#e8b73d;
 }
 .nav-right a::before{
     content: '';
@@ -46,7 +47,7 @@ navbar{
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: #b16e01;
+    background-color: #e8b73d;
     transition: all 500ms ease-in-out;
 }
 .nav-right a:hover::before{
@@ -81,5 +82,59 @@ navbar{
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.123) 0px 0px 0px 1px;
+}
+
+#s2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    flex-wrap: wrap;
+    padding: 10vw;
+    height: auto;
+}
+
+#s2 .card{
+    max-width: 300px;
+    min-width: 250px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.534);
+    z-index: 888;
+    border-radius: 16px;
+    box-shadow: rgba(255, 255, 255, 0.735) 0px 3px 8px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+    position: relative;
+}
+
+.card img{
+    width: 120px;
+    height: auto;
+}
+
+.card h2{
+    transform: skewY(-10deg);
+    font-size: 3.2rem;
+    text-shadow: rgba(255, 255, 255, 0.735) 0px 3px 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 8.5px;
+}
+
+.card p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.bg-card{
+   position: absolute;
+   top: 35%;
+   opacity: 0.1;
+   transform: scale(2.7);
+   border-radius: 100%;
 }
 
