@@ -1,65 +1,76 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: #090909;
     color: #ffffff;
 }
-navbar{
+
+navbar {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 80px;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #ffffff81;
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     z-index: 999;
 }
-.nav-left{
+
+.nav-left {
     width: 10%;
     padding-left: 4.2vw;
 }
-.nav-right{
+
+.nav-right {
     width: 90%;
     display: flex;
     gap: 2vw;
     align-items: center;
     justify-content: center;
 }
-.nav-right a{
+
+.nav-right a {
     color: #090909;
     font-size: 22px;
     text-decoration: none;
     position: relative;
 }
-.nav-right a:hover{
-    color:#e8b73d;
+
+.nav-right a:hover {
+    color: #581403;
 }
-.nav-right a::before{
+
+.nav-right a::before {
     content: '';
     position: absolute;
     bottom: -10px;
     left: 0;
     width: 0%;
-    height: 3px;
-    background-color: #e8b73d;
+    height: 8px;
+    background-color: orange;
+    border-radius: 999px;
     transition: all 500ms ease-in-out;
 }
-.nav-right a:hover::before{
+
+.nav-right a:hover::before {
     width: 100%;
 }
-.nav-left img{
+
+.nav-left img {
     border-radius: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#s1{
+
+#s1 {
     height: 100vh;
-    padding-top:100px;
+    padding-top: 100px;
     background-image: url("./Images/wallpaper.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,22 +79,59 @@ navbar{
     justify-content: center;
 }
 
-#s1 h1{
-    font-size: 12vw;
+#s1 h1 {
     z-index: 888;
     text-shadow: rgb(255, 255, 255) 0px 5px 15px;
+    animation: fromBottom 1.5s linear;
+    
 }
-.ball{
+
+.ball {
     position: absolute;
     top: 15%;
     left: 10%;
     width: 60vw;
-    height:60vw;
+    height: 60vw;
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.123) 0px 0px 0px 1px;
+    animation: fromLeft 1s ease-in-out;
 }
-#s2{
+
+strong{
+    color: orange;
+    opacity: 0.5;
+    font-size: 17rem;
+}
+span{
+    font-style: italic;
+    font-size: 6vw;
+    text-decoration: underline;
+}
+
+@keyframes fromLeft {
+    from{
+        opacity: 0;
+        left: -30%;
+        transform: scale(0.9);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fromBottom {
+    0%{
+        opacity: 0;
+        transform: translateX(100px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+#s2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +140,8 @@ navbar{
     padding: 10vw;
     height: auto;
 }
-#s2 .card{
+
+#s2 .card {
     max-width: 300px;
     min-width: 250px;
     height: 400px;
@@ -110,57 +159,61 @@ navbar{
     border: 2px solid white;
     transition: all 500ms ease-in-out;
 }
-.card img{
+
+.card img {
     width: 120px;
     height: auto;
 }
-.card h2{
+
+.card h2 {
     transform: skewY(-10deg);
     font-size: 3rem;
     text-shadow: rgba(255, 255, 255, 0.735) 0px 3px 8px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 5px;
     font-weight: 900;
     color: #ffffff;
     transition: all 500ms ease-in-out;
 }
-.card p{
+
+.card p {
     text-align: center;
     font-size: 18px;
     line-height: 25px;
 }
-.bg-card{
-   position: absolute;
-   top: 35%;
-   opacity: 0.2;
-   transform: scale(3.6);
-   border-radius: 100%;
-   transition: all 500ms ease-in-out;
+
+.bg-card {
+    position: absolute;
+    top: 35%;
+    opacity: 0.2;
+    transform: scale(3.6);
+    border-radius: 100%;
+    transition: all 500ms ease-in-out;
 }
 
-#s2 .card:hover{
+#s2 .card:hover {
     cursor: crosshair;
     border: 2px solid orange;
     transform: translateY(-50px) scale(1.04);
-    box-shadow:orange 0px 3px 8px;
+    box-shadow: orange 0px 3px 8px;
 }
 
-.card:hover h2{
-    color: orange;
+.card:hover h2 {
+    color: #581403;
     margin-top: 18vh;
 }
 
-.icon{
+.icon {
     transition: all 500ms ease-in-out;
 }
-.card:hover .icon{
+
+.card:hover .icon {
     display: none;
 }
 
-.card:hover .bg-card{
+.card:hover .bg-card {
     position: absolute;
     top: 10%;
     opacity: 1;
     transform: scale(2);
 }
-
