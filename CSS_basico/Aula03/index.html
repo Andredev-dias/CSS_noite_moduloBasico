@@ -101,6 +101,20 @@
         <div class="ball3"></div>
       </section>
     </main>
+    <div onclick="abrir()" class="btn-zap">
+      <img width="60px" height="auto" src="./Images/whatsapp.png" alt="Zap">
+    </div>
+    <div id="modal">
+      <h1 onclick="fechar()">✖</h1>
+      <form>
+        <label for="nome">Nome</label><br>
+        <input is="nome" type="text"><br>
+        <label for="msg">Assunto</label><br>
+        <input id="msg" type="text"><br><br>
+        <button onclick="enviar()">Enviar</button>
+      </form>
+    </div>
 
+    <script src="./script.js"></script>
   </body>
 </html>
