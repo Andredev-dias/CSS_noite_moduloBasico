@@ -313,6 +313,43 @@ span{
  
 }
 
+@media (width < 1285px){
+   #s2,#s3{
+        height:auto;
+    }
+    #s1 {
+        background-image: url("./Images/fundoCelular.png");
+    }
+    .ball {
+        top: 35%;
+        right: -10px;
+        width: 90vw;
+        height: 90vw;
+    }
+    strong{
+        font-size:10rem;
+    }
+    span{
+        padding-left: 15px;
+        font-size: 3rem;
+    }
+    #s2 {
+        gap:4vh;
+        padding-top: 20vh;
+    }
+    .bg-card {
+        transform: scale(2);
+    }
+    #s2 .card:hover {
+        transform: translateY(0px) scale(1.04);
+    }
+    .card h2 {
+        font-size: 2.6rem;
+    }
+    .media-section{
+        width: 70%;
+    }
+}
 
 @media (width < 600px){
     navbar {
@@ -336,5 +373,14 @@ span{
         color: #090909;
         font-size: 16px;
     }
-    
+    strong{
+        font-size:6rem;
+        padding-left: 15px;
+    }
+    .ball {
+        display: none;
+    }
+    .ball2{
+        display: none;
+    }
 }
