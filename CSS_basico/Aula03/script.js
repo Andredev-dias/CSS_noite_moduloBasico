@@ -4,10 +4,10 @@ function abrir(){
 }
 
 function fechar(){
-     var modal = document.getElementById("modal")
+    var modal = document.getElementById("modal")
     modal.style.display = "none"
 }
 
 function enviar(){
-    
+    //ainda por fazer
 }
