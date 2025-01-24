@@ -20,7 +20,7 @@
     <main>
       <section id="s1">
         <div class="ball"></div>
-        <h1><strong>Boxing</strong> <span>training</span></h1>
+        <h1><strong>Boxing</strong> <span class="span01">training</span></h1>
       </section>
       <section id="s2">
         <div class="card">
@@ -92,9 +92,27 @@
             <p>Medias sociais</p>
           </div>
           <div class="md">
-            <a href="https://www.facebook.com/" target="_blank"><img width="25px" height="auto" src="./Images/facebook.png" alt="facebook" /></a>
-            <a href="https://www.instagram.com/" target="_blank"><img width="25px" height="auto"  src="./Images/instagram.png" alt="instagram" /></a>
-            <a href="https://www.twitter.com/" target="_blank"><img width="25px" height="auto"  src="./Images/twitter.png" alt="twitter" /></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img
+                width="25px"
+                height="auto"
+                src="./Images/facebook.png"
+                alt="facebook"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                width="25px"
+                height="auto"
+                src="./Images/instagram.png"
+                alt="instagram"
+            /></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img
+                width="25px"
+                height="auto"
+                src="./Images/twitter.png"
+                alt="twitter"
+            /></a>
           </div>
         </div>
         <div class="ball2"></div>
@@ -102,19 +120,32 @@
       </section>
     </main>
     <div onclick="abrir()" class="btn-zap">
-      <img width="60px" height="auto" src="./Images/whatsapp.png" alt="Zap">
+      <img width="60px" height="auto" src="./Images/whatsapp.png" alt="Zap" />
     </div>
     <div id="modal">
-      <h1 onclick="fechar()">✖</h1>
-      <form>
-        <label for="nome">Nome</label><br>
-        <input is="nome" type="text"><br>
-        <label for="msg">Assunto</label><br>
-        <input id="msg" type="text"><br><br>
-        <button onclick="enviar()">Enviar</button>
+      <h1 onclick="fecharModal()">✖</h1>
+      <form onsubmit="enviar(event)">
+        <label for="nome">Nome</label><br />
+        <input id="nome" type="text" placeholder="Digite seu nome" /><br />
+        <label for="msg">Assunto</label><br />
+        <input
+          id="msg"
+          type="text"
+          placeholder="Digite o assunto"
+        /><br /><br />
+        <button type="submit">Enviar</button>
       </form>
+      <!-- <div >
+        <label for="nome">Nome</label><br>
+        <input id="nome" type="text" placeholder="Digite seu nome"><br>
+        <label for="msg" >Assunto</label><br>
+        <input id="msg" type="text" placeholder="Digite o assunto"><br><br>
+        <button onclick="enviar()">Enviar</button>
+      </div> -->
     </div>
-
+    <div id="alert" class="validation">
+      Preencha todos os campos! <span class="span-alert" onclick="fecharAlert()">❌</span>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>

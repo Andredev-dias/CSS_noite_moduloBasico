@@ -84,7 +84,7 @@ navbar {
     z-index: 888;
     text-shadow: rgb(255, 255, 255) 0px 5px 15px;
     animation: fromBottom 1.5s linear;
-    
+
 }
 
 .ball {
@@ -99,13 +99,13 @@ navbar {
     animation: fromLeft 1s ease-in-out;
 }
 
-strong{
+strong {
     color: orange;
     opacity: 0.5;
     font-size: 17rem;
 }
 
-span{
+.span01 {
     font-style: italic;
     font-size: 6vw;
     text-decoration: underline;
@@ -198,7 +198,7 @@ span{
     transform: scale(2);
 }
 
-#s3{
+#s3 {
     height: 40vh;
     padding: 10vw;
     text-align: center;
@@ -211,13 +211,13 @@ span{
 
 }
 
-.msgs{
+.msgs {
     display: flex;
     flex-direction: column;
     gap: 2vh;
 }
 
-.msgs h3{
+.msgs h3 {
     font-size: 2.8rem;
     font-weight: 100;
     text-transform: uppercase;
@@ -226,13 +226,13 @@ span{
     z-index: 999;
 }
 
-.msgs p{
+.msgs p {
     font-size: 20px;
     line-height: 26px;
     z-index: 999;
 }
 
-.media-section{
+.media-section {
     background-color: #ffffff41;
     border-radius: 20px;
     height: 90px;
@@ -246,22 +246,22 @@ span{
     border: 2px solid transparent;
 }
 
-.media-section:hover{
-  border: 2px solid #ffffff;
+.media-section:hover {
+    border: 2px solid #ffffff;
 }
 
-.md{
+.md {
     display: flex;
-    gap: 1.2vw; 
+    gap: 1.2vw;
     transition: all 200ms ease-in-out;
 }
 
-.md img{
+.md img {
     filter: grayscale(1);
     transition: all 200ms ease-in-out;
 }
 
-.md img:hover{
+.md img:hover {
     transform: translateY(-3px) scale(1.5) rotate(10deg);
     filter: grayscale(0);
     z-index: 999;
@@ -277,7 +277,7 @@ span{
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.123) 0px 0px 0px 1px;
-  
+
 }
 
 .ball3 {
@@ -291,7 +291,7 @@ span{
     box-shadow: rgba(255, 255, 255, 0.044) 0px 10px 36px 0px, rgba(255, 255, 255, 0.019) 0px 0px 0px 1px;
 }
 
-.btn-zap{
+.btn-zap {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -299,13 +299,13 @@ span{
     transition: all 500ms ease-in-out;
 }
 
-.btn-zap:hover{
+.btn-zap:hover {
     opacity: 1;
     transform: scale(1.1) translateY(-15px) rotate(360deg);
     cursor: pointer;
 }
 
-#modal{
+#modal {
     display: none;
     position: fixed;
     top: 50%;
@@ -324,7 +324,7 @@ span{
     flex-direction: column;
 }
 
-#modal h1{
+#modal h1 {
     font-size: 20px;
     opacity: 0.5;
     width: 20px;
@@ -334,23 +334,23 @@ span{
     left: 20px;
 }
 
-#modal h1:hover{
+#modal h1:hover {
     cursor: pointer;
     opacity: 1;
     color: orange;
 }
 
-#modal input{
+#modal input {
     padding: 10px;
     border-radius: 999px;
     margin: 10px 0px;
 }
 
-#modal label{
-  padding-left: 15px;
+#modal label {
+    padding-left: 15px;
 }
 
-form button{
+form button {
     width: 100%;
     border-radius: 999px;
     padding: 10px;
@@ -364,58 +364,100 @@ form button{
     color: #090909;
 }
 
-form button:hover{
- cursor: pointer;
- opacity: 1;
- color: white;
- border: 2px solid white;
+form button:hover {
+    cursor: pointer;
+    opacity: 1;
+    color: white;
+    border: 2px solid white;
 }
 
-@media (width < 1285px){
-   #s2,#s3{
-        height:auto;
+.validation {
+    width: 50%;
+    height: 50px;
+    background-color: lightpink;
+    color: red;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border-radius: 999px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    animation: up 500ms ease-in-out;
+    padding: 0px 2vw;
+}
+
+.span-alert{
+   font-size: 18px;
+    opacity: 0.7;
+}
+
+.span-alert:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (width < 1285px) {
+
+    #s2,
+    #s3 {
+        height: auto;
     }
+
     #s1 {
         background-image: url("./Images/fundoCelular.png");
     }
+
     .ball {
         top: 35%;
         right: -10px;
         width: 90vw;
         height: 90vw;
     }
-    strong{
-        font-size:10rem;
+
+    strong {
+        font-size: 10rem;
     }
-    span{
+
+    span {
         padding-left: 15px;
         font-size: 3rem;
     }
+
     #s2 {
-        gap:4vh;
+        gap: 4vh;
         padding-top: 20vh;
     }
+
     .bg-card {
         transform: scale(2);
     }
+
     #s2 .card:hover {
         transform: translateY(0px) scale(1.04);
     }
+
     .card h2 {
         font-size: 2.6rem;
     }
-    .media-section{
+
+    .media-section {
         width: 70%;
     }
+
     .ball {
         display: none;
     }
-    .ball2{
+
+    .ball2 {
         display: none;
     }
 }
 
-@media (width < 600px){
+@media (width < 600px) {
     navbar {
         display: flex;
         flex-direction: column;
@@ -423,48 +465,64 @@ form button:hover{
         gap: 2vh;
         background-color: #ffffffdc;
     }
+
     .nav-left {
         width: 100%;
         padding-left: 0px;
         text-align: center;
     }
-    
+
     .nav-right {
         width: 100%;
         margin-bottom: 1vh;
     }
+
     .nav-right a {
         color: #090909;
         font-size: 16px;
     }
-    strong{
-        font-size:6rem;
+
+    strong {
+        font-size: 6rem;
         padding-left: 15px;
     }
-  
-    #modal{
+
+    #modal {
         width: 80%;
         padding: 20px 10px;
     }
 }
 
 @keyframes fromLeft {
-    from{
+    from {
         opacity: 0;
         left: -30%;
         transform: scale(0.9);
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
 
 @keyframes fromBottom {
-    0%{
+    0% {
         opacity: 0;
         transform: translateX(100px) scale(0.9);
     }
-    100%{
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        bottom: -20px;
+    }
+
+    100% {
         opacity: 1;
     }
 }
