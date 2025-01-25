@@ -52,6 +52,36 @@ body {
     border: 2px solid #ffffff !important;
 }
 
+#s1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20vh;
+}
+#s1 h1 {
+    width: 100%;
+    text-align: center;
+    z-index: 888;
+    text-shadow: rgb(255, 255, 255) 0px 5px 15px;
+    animation: fromBottom 1.5s linear;
+}
+strong {
+    color: orange;
+    opacity: 0.5;
+    font-size: 8vw;
+}
+.span01 {
+    color: #ffff;
+    font-style: italic;
+    font-size: 4vw;
+    text-decoration: underline;
+}
+
+.wrap-slider{
+    width: 800px;
+}
+
 @media (width < 1000px) {
     .navbar {
         background-color: #ffffffbc !important;
@@ -60,10 +90,27 @@ body {
     .navbar-nav a:hover::before {
         width: 13%;
     }
+    #s1{
+ 
+     
+        padding-top: 8.5vh;
+    }
 }
 
 @media (width < 756px) {
     .navbar-nav a:hover::before {
         width: 110px;
+    }
+}
+
+
+@keyframes fromBottom {
+    0% {
+        opacity: 0;
+        transform: translateX(100px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
     }
 }
